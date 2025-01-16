@@ -1,0 +1,92 @@
+/* Reset and Layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: url('../images/indexbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Main Styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 160px); /* Adjust based on header and footer height */
+    padding: 55px; /* Spacing around content */
+}
+
+/* Form Container */
+.form-container {
+    padding: 40px;
+    border-radius: 8px;
+    background-color: rgba(0, 20, 80, 0.8); /* Semi-transparent background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* Styling the h2 inside the form container */
+.form-container h2 {
+    color: #ffffff; /* Text color */
+    font-size: 2em; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.form-container h3 {
+    color: #ffffff; /* Text color */
+    font-size: 1em; /* Adjust font size */
+    margin-bottom: 5px; /* Spacing below the heading */
+}
+
+/* Form Input Fields */
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-container input:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+/* Buttons */
+.form-container button {
+    width: 107%;
+    padding: 5px;
+    background-color: #0073e6;
+    color: white;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 7px; /* Adds space between buttons */
+}
+
+.form-container button:last-child {
+    margin-bottom: 0; /* Removes extra margin after the last button */
+}
+
+
+.form-container button:hover {
+    background-color: #005bb5;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    text-align: center;
+    font-size: 0.7em;
+    color: white;
+}

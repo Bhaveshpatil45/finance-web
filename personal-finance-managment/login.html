@@ -7,15 +7,18 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <header>
-        <h1>Login</h1>
-    </header>
     <main>
         <section class="form-container">
+		<h1>Personal Finance Management</h1>
             <form id="loginForm">
                 <input type="text" id="username" placeholder="Username" required>
                 <input type="password" id="password" placeholder="Password" required>
                 <button type="submit">Login</button>
+				 <p class="forgot-password">
+                    <a href="forgot-password.html">Forgot Password?</a>
+                </p>
+				<h2>Don't have an account yet?</h2>
+                <button type="button" class="Create Account" onclick="location.href='register.html'">Create account</button>
             </form>
         </section>
     </main>

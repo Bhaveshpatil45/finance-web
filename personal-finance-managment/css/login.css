@@ -1,0 +1,115 @@
+/* Reset and Layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: url('../images/indexbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    color: #ffffff;
+    background-color: rgba(0, 20, 80, 0.8); /* Semi-transparent background */
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+/* Main Styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 160px); /* Adjust height based on header and footer */
+    padding: 55px; /* Spacing around the content */
+}
+
+/* Form Container */
+.form-container {
+    padding: 40px;
+    border-radius: 8px;
+    background-color: rgba(0, 20, 80, 0.8); /* Semi-transparent background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+    width: 100%;
+    max-width: 350px; /* Slightly increased width for better spacing */
+    text-align: center;
+}
+
+/* Form Container Title */
+.form-container h1 {
+    color: #ffffff; /* Text color */
+    font-size: 2em; /* Font size for the title */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Subheading (optional) */
+.form-container h2 {
+    color: #ffffff; /* Text color */
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Input Fields */
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-container input:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+/* Buttons */
+.form-container button {
+    width: 107%; /* Full-width button */
+    padding: 5px;
+    background-color: #0073e6;
+    color: white;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 7px; /* Space between buttons */
+}
+
+.form-container button:hover {
+    background-color: #005bb5;
+}
+
+/* Link for Forgot Password */
+.form-container .forgot-password {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.form-container .forgot-password a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-container .forgot-password a:hover {
+    color: #f0c040; /* Highlight color on hover */
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    text-align: center;
+    font-size: 0.7em;
+    color: white;
+}

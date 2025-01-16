@@ -7,16 +7,17 @@
     <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
-    <header>
-        <h1>Register</h1>
-    </header>
     <main>
         <section class="form-container">
+            <h2>Personal Finance Management</h2>
             <form id="registerForm">
                 <input type="text" id="username" placeholder="Username" required>
                 <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required>
                 <input type="email" id="email" placeholder="Email" required>
-                <button type="submit">Register</button>
+                <button type="submit">Create Account</button>
+                <h3>Already have an account?</h3>
+                <button type="button" class="login-button" onclick="location.href='login.html'">Login</button>
             </form>
         </section>
     </main>
