@@ -6,7 +6,7 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    background: url('indexbackground.jpg') no-repeat center center fixed;
+    background: url('../images/indexbackground.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #333;
 }
@@ -14,30 +14,29 @@ html, body {
 /* Header Styles */
 header {
     display: flex;
-    justify-content: space-between; /* Distribute space between items */
     align-items: center; /* Vertically align items */
-    background-color: rgba(0, 20, 80, 0); /* Semi-transparent background */
+    justify-content: space-between; /* Space between title and project name */
+    background-color: rgba(0, 20, 80, 0); /* Transparent background */
     color: white;
-    padding: 20px 40px; /* Adjusted padding */
+    padding: 10px 20px; /* Compact padding */
 }
 
-header .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start; /* Align logo to the left */
-}
-
-header .logo {
-    height: 100px; /* Adjust logo size */
-    width: auto;
-    margin-right: 20px; /* Space between logo and title */
-}
-
+/* Title Styling */
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 1.8em;
+    text-align: left;
 }
 
+/* Project Name */
+header .project-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+}
+
+/* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
@@ -62,21 +61,13 @@ nav ul li a:hover {
     color: #cce7ff;
 }
 
-/* Project Name - Positioned on the Right */
-header .project-name {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: white;
-    text-align: right;
-}
-
 /* Main Content */
 main {
     flex: 1;
-    padding: 20px;
+    padding: 143px; /* Adjust padding for spacing */
     text-align: center;
-    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
-    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    border-radius: 15px;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -84,13 +75,34 @@ main {
 main .intro h2 {
     margin-bottom: 10px;
     font-size: 1.8em;
-    color: #000000;
+    color: #ffffff;
 }
 
 main .intro p {
     font-size: 1.1em;
     line-height: 1.6;
-    color: #555;
+    color: #ffffff;
+}
+
+/* Get Started Button */
+.get-started {
+    text-align: center;
+    margin: 20px 0; /* Add some space above the footer */
+}
+
+.get-started .btn {
+    display: inline-block;
+    background-color: #0073e6; /* Button color */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.get-started .btn:hover {
+    background-color: #005bb5; /* Darker shade on hover */
 }
 
 /* Footer Styles */
