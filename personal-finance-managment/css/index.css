@@ -1,0 +1,107 @@
+/* Reset and Layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background: url('indexbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Vertically align items */
+    background-color: rgba(0, 20, 80, 0); /* Semi-transparent background */
+    color: white;
+    padding: 20px 40px; /* Adjusted padding */
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo to the left */
+}
+
+header .logo {
+    height: 100px; /* Adjust logo size */
+    width: auto;
+    margin-right: 20px; /* Space between logo and title */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #cce7ff;
+}
+
+/* Project Name - Positioned on the Right */
+header .project-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-align: right;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main .intro h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    color: #000000;
+}
+
+main .intro p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
